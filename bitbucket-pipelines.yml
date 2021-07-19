@@ -1,0 +1,21 @@
+# bitbucket-pipelines.yml
+
+# Change this to your project's node version
+image: node:12.0.0
+
+clone:
+  depth: full
+
+# Deploy the master branch to our app.
+# Pulls the Heroku API Key and the name of the app from our
+# configured environment variables.
+herokuAppDeployment: &herokuAppDeployment
+  name: Deploy Heroku dacbao-pw
+  script:
+    - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master -f
+
+pipelines:
+  # Deploy the master branch to our app whenever it is updated
+  branches:
+    master:
+      - step: *herokuAppDeployment
