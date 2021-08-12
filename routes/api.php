@@ -68,6 +68,99 @@ Route::prefix('foru')->group(function () {
     });
 });
 
+Route::prefix('ws')->group(function () {
+    Route::post('memberInfo', function (Request $request) {
+        $objResult = memberInquiryForWsDummy($request);
+        return response()->json($objResult);
+    });
+});
+
+function memberInquiryForWsDummy($request){
+    $customerId=$request->customer_id;
+    switch ($customerId)
+    {
+        case '1234567890' :
+            $objReturnValue = new stdClass();
+            $objReturnValue->return_code = 11;
+            $objReturnValue->customer_rank_cd = 4;
+            $objReturnValue->last_name ='lampart' ;
+            $objReturnValue->first_name ='lampart' ;
+            $objReturnValue->last_name_kana ='Kervin' ;
+            $objReturnValue->first_name_kana ='MS' ;
+            $objReturnValue->birthday ='1998' ;
+            $objReturnValue->sex_cd ='nam' ;
+            $objReturnValue->zipcode =700000 ;
+            $objReturnValue->prefecture ='good job' ;
+            $objReturnValue->address ='hồ chí minh' ;
+            $objReturnValue->address_condominium_name ='hò chí minh' ;
+            $objReturnValue->mail_address ='hồ chí minh' ;
+            $objReturnValue->phone_number = '0328328329';
+            $objReturnValue->point_use_flg =1 ;
+            $objReturnValue->mall_use_flg =1 ;
+            $objReturnValue->sub_mail_address ="lampart@gmail.com" ;
+
+
+            $objResult = new stdClass();
+            $objResult->result = 'OK';
+            $objResult->returnValue = $objReturnValue;
+            break;
+
+        case '1234567891' :
+            $objReturnValue = new stdClass();
+            $objReturnValue->return_code = 12;
+            $objReturnValue->customer_rank_cd = null;
+            $objReturnValue->last_name =null ;
+            $objReturnValue->first_name =null ;
+            $objReturnValue->last_name_kana =null ;
+            $objReturnValue->first_name_kana =null ;
+            $objReturnValue->birthday =null ;
+            $objReturnValue->sex_cd =null ;
+            $objReturnValue->zipcode =null ;
+            $objReturnValue->prefecture =null ;
+            $objReturnValue->address =null ;
+            $objReturnValue->address_condominium_name =null ;
+            $objReturnValue->mail_address =null ;
+            $objReturnValue->phone_number = null;
+            $objReturnValue->point_use_flg =null ;
+            $objReturnValue->mall_use_flg =null ;
+            $objReturnValue->sub_mail_address =null ;
+
+
+            $objResult = new stdClass();
+            $objResult->result = 'NG';
+            $objResult->returnValue = $objReturnValue;
+            break;
+
+        case '1234567892' :
+            $objReturnValue = new stdClass();
+            $objReturnValue->return_code = 1;
+            $objReturnValue->customer_rank_cd = null;
+            $objReturnValue->last_name =null ;
+            $objReturnValue->first_name =null ;
+            $objReturnValue->last_name_kana =null ;
+            $objReturnValue->first_name_kana =null ;
+            $objReturnValue->birthday =null ;
+            $objReturnValue->sex_cd =null ;
+            $objReturnValue->zipcode =null ;
+            $objReturnValue->prefecture =null ;
+            $objReturnValue->address =null ;
+            $objReturnValue->address_condominium_name =null ;
+            $objReturnValue->mail_address =null ;
+            $objReturnValue->phone_number = null;
+            $objReturnValue->point_use_flg =null ;
+            $objReturnValue->mall_use_flg =null ;
+            $objReturnValue->sub_mail_address =null ;
+
+            $objResult = new stdClass();
+            $objResult->result = 'ERROR';
+            $objResult->returnValue = $objReturnValue;
+            break;
+    }
+
+    return $objResult;
+
+}
+
 function loginWsDataDummy($request)
 {
     //  2.Account bình thường
