@@ -90,7 +90,7 @@ function memberInquiryForWsDummy($request)
         case '1234567' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 11;
-            $objReturnValue->customer_rank_cd = 4;
+            $objReturnValue->customer_rank_id = 4;
             $objReturnValue->last_name = 'System';
             $objReturnValue->first_name = 'Water';
             $objReturnValue->last_name_kana = 'System';
@@ -114,7 +114,7 @@ function memberInquiryForWsDummy($request)
         case '1234568' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 12;
-            $objReturnValue->customer_rank_cd = null;
+            $objReturnValue->customer_rank_id = null;
             $objReturnValue->last_name = null;
             $objReturnValue->first_name = null;
             $objReturnValue->last_name_kana = null;
@@ -138,7 +138,7 @@ function memberInquiryForWsDummy($request)
         case '1234569' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 1;
-            $objReturnValue->customer_rank_cd = null;
+            $objReturnValue->customer_rank_id = null;
             $objReturnValue->last_name = null;
             $objReturnValue->first_name = null;
             $objReturnValue->last_name_kana = null;
@@ -172,7 +172,7 @@ function memberInquiryForForUDummy($request)
         case 'K01234567' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 11;
-            $objReturnValue->customer_rank_cd = 4;
+            $objReturnValue->customer_rank_id = 4;
             $objReturnValue->last_name = 'U';
             $objReturnValue->first_name = 'For';
             $objReturnValue->last_name_kana = 'U';
@@ -197,7 +197,7 @@ function memberInquiryForForUDummy($request)
         case 'K01234568' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 12;
-            $objReturnValue->customer_rank_cd = null;
+            $objReturnValue->customer_rank_id = null;
             $objReturnValue->last_name = null;
             $objReturnValue->first_name = null;
             $objReturnValue->last_name_kana = null;
@@ -222,7 +222,7 @@ function memberInquiryForForUDummy($request)
         case 'K01234569' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 1;
-            $objReturnValue->customer_rank_cd = null;
+            $objReturnValue->customer_rank_id = null;
             $objReturnValue->last_name = null;
             $objReturnValue->first_name = null;
             $objReturnValue->last_name_kana = null;
