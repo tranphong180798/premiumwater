@@ -87,7 +87,7 @@ function memberInquiryForWsDummy($request)
     $customerId = $request->customer_id;
     $objResult = new stdClass();
     switch ($customerId) {
-        case '1234567890' :
+        case '1234567' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 11;
             $objReturnValue->customer_rank_cd = 4;
@@ -111,7 +111,7 @@ function memberInquiryForWsDummy($request)
             $objResult->returnValue = $objReturnValue;
             break;
 
-        case '1234567891' :
+        case '1234568' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 12;
             $objReturnValue->customer_rank_cd = null;
@@ -135,7 +135,7 @@ function memberInquiryForWsDummy($request)
             $objResult->returnValue = $objReturnValue;
             break;
 
-        case '1234567892' :
+        case '1234569' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 1;
             $objReturnValue->customer_rank_cd = null;
@@ -169,7 +169,7 @@ function memberInquiryForForUDummy($request)
     $customerId = $request->customer_id;
     $objResult = new stdClass();
     switch ($customerId) {
-        case '2234567890' :
+        case 'K01234567' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 11;
             $objReturnValue->customer_rank_cd = 4;
@@ -194,7 +194,7 @@ function memberInquiryForForUDummy($request)
             $objResult->returnValue = $objReturnValue;
             break;
 
-        case '2234567891' :
+        case 'K01234568' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 12;
             $objReturnValue->customer_rank_cd = null;
@@ -219,7 +219,7 @@ function memberInquiryForForUDummy($request)
             $objResult->returnValue = $objReturnValue;
             break;
 
-        case '2234567892' :
+        case 'K01234569' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 1;
             $objReturnValue->customer_rank_cd = null;
