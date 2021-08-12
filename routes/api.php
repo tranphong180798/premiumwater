@@ -97,7 +97,7 @@ function memberInquiryForWsDummy($request)
             $objReturnValue->first_name_kana = 'Water';
             $objReturnValue->birthday = '20200808';
             $objReturnValue->sex_cd = 'M';
-            $objReturnValue->zipcode = 700000;
+            $objReturnValue->zipcode = '700000';
             $objReturnValue->prefecture = 'good job';
             $objReturnValue->address = 'hồ chí minh';
             $objReturnValue->address_condominium_name = 'hò chí minh';
@@ -179,7 +179,7 @@ function memberInquiryForForUDummy($request)
             $objReturnValue->first_name_kana = 'For';
             $objReturnValue->birthday = '19980808';
             $objReturnValue->sex_cd = 'M';
-            $objReturnValue->zipcode = 700000;
+            $objReturnValue->zipcode = '700000';
             $objReturnValue->prefecture = 'good job';
             $objReturnValue->address = 'hồ chí minh';
             $objReturnValue->address_condominium_name = 'hò chí minh';
