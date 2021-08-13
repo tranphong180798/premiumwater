@@ -159,7 +159,7 @@ function memberInquiryForWsDummy($request)
             $objResult->returnValue = $objReturnValue;
             break;
 
-        case '1234569' :
+        default:
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 1;
             $objReturnValue->customer_rank_id = null;
@@ -267,7 +267,7 @@ function memberInquiryForForUDummy($request)
             $objResult->returnValue = $objReturnValue;
             break;
 
-        case 'K01234569' :
+        default:
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 1;
             $objReturnValue->customer_rank_id = null;
