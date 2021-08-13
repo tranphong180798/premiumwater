@@ -111,6 +111,30 @@ function memberInquiryForWsDummy($request)
             $objResult->returnValue = $objReturnValue;
             break;
 
+        case '1234560' :
+            $objReturnValue = new stdClass();
+            $objReturnValue->return_code = 11;
+            $objReturnValue->customer_rank_id = 4;
+            $objReturnValue->last_name = 'System ';
+            $objReturnValue->first_name = 'Water';
+            $objReturnValue->last_name_kana = 'System';
+            $objReturnValue->first_name_kana = 'Water';
+            $objReturnValue->birthday = '20200808';
+            $objReturnValue->sex_cd = 'M';
+            $objReturnValue->zipcode = '700000';
+            $objReturnValue->prefecture = 'good job';
+            $objReturnValue->address = 'hồ chí minh';
+            $objReturnValue->address_condominium_name = 'hò chí minh';
+            $objReturnValue->mail_address = 'hồ chí minh';
+            $objReturnValue->phone_number = '0328328329';
+            $objReturnValue->point_use_flg = 1;
+            $objReturnValue->mall_use_flg = 1;
+            $objReturnValue->sub_mail_address = "lampart@gmail.com";
+
+            $objResult->result = 'OK';
+            $objResult->returnValue = $objReturnValue;
+            break;
+
         case '1234568' :
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 12;
@@ -189,6 +213,30 @@ function memberInquiryForForUDummy($request)
             $objReturnValue->mall_use_flg = 1;
             $objReturnValue->sub_mail_address = "lampart@gmail.com";
 
+
+            $objResult->result = 'OK';
+            $objResult->returnValue = $objReturnValue;
+            break;
+
+        case 'K01234560' :
+            $objReturnValue = new stdClass();
+            $objReturnValue->return_code = 11;
+            $objReturnValue->customer_rank_id = 4;
+            $objReturnValue->last_name = 'System ';
+            $objReturnValue->first_name = 'Water';
+            $objReturnValue->last_name_kana = 'System';
+            $objReturnValue->first_name_kana = 'Water';
+            $objReturnValue->birthday = '20200808';
+            $objReturnValue->sex_cd = 'M';
+            $objReturnValue->zipcode = '700000';
+            $objReturnValue->prefecture = 'good job';
+            $objReturnValue->address = 'hồ chí minh';
+            $objReturnValue->address_condominium_name = 'hò chí minh';
+            $objReturnValue->mail_address = 'hồ chí minh';
+            $objReturnValue->phone_number = '0328328329';
+            $objReturnValue->point_use_flg = 1;
+            $objReturnValue->mall_use_flg = 1;
+            $objReturnValue->sub_mail_address = "lampart@gmail.com";
 
             $objResult->result = 'OK';
             $objResult->returnValue = $objReturnValue;
