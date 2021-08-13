@@ -159,6 +159,30 @@ function memberInquiryForWsDummy($request)
             $objResult->returnValue = $objReturnValue;
             break;
 
+        case '9999999' :
+            $objReturnValue = new stdClass();
+            $objReturnValue->return_code = 2;
+            $objReturnValue->customer_rank_id = null;
+            $objReturnValue->last_name = null;
+            $objReturnValue->first_name = null;
+            $objReturnValue->last_name_kana = null;
+            $objReturnValue->first_name_kana = null;
+            $objReturnValue->birthday = null;
+            $objReturnValue->sex_cd = null;
+            $objReturnValue->zipcode = null;
+            $objReturnValue->prefecture = null;
+            $objReturnValue->address = null;
+            $objReturnValue->address_condominium_name = null;
+            $objReturnValue->mail_address = null;
+            $objReturnValue->phone_number = null;
+            $objReturnValue->point_use_flg = null;
+            $objReturnValue->mall_use_flg = null;
+            $objReturnValue->sub_mail_address = null;
+
+            $objResult->result = 'NG';
+            $objResult->returnValue = $objReturnValue;
+            break;
+
         default:
             $objReturnValue = new stdClass();
             $objReturnValue->return_code = 1;
@@ -262,6 +286,30 @@ function memberInquiryForForUDummy($request)
             $objReturnValue->mall_use_flg = null;
             $objReturnValue->sub_mail_address = null;
 
+
+            $objResult->result = 'NG';
+            $objResult->returnValue = $objReturnValue;
+            break;
+
+        case 'K09999999' :
+            $objReturnValue = new stdClass();
+            $objReturnValue->return_code = 2;
+            $objReturnValue->customer_rank_id = null;
+            $objReturnValue->last_name = null;
+            $objReturnValue->first_name = null;
+            $objReturnValue->last_name_kana = null;
+            $objReturnValue->first_name_kana = null;
+            $objReturnValue->birthday = null;
+            $objReturnValue->sex_cd = null;
+            $objReturnValue->zipcode = null;
+            $objReturnValue->prefecture = null;
+            $objReturnValue->address = null;
+            $objReturnValue->address_condominium_name = null;
+            $objReturnValue->mail_address = null;
+            $objReturnValue->phone_number = null;
+            $objReturnValue->point_use_flg = null;
+            $objReturnValue->mall_use_flg = null;
+            $objReturnValue->sub_mail_address = null;
 
             $objResult->result = 'NG';
             $objResult->returnValue = $objReturnValue;
