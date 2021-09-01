@@ -151,6 +151,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -173,7 +179,10 @@
       <workItem from="1628771856469" duration="795000" />
       <workItem from="1628778451274" duration="312000" />
       <workItem from="1628779497274" duration="1368000" />
-      <workItem from="1628811942059" duration="3890000" />
+      <workItem from="1628811942059" duration="4662000" />
+      <workItem from="1628834487046" duration="4247000" />
+      <workItem from="1629941423675" duration="366000" />
+      <workItem from="1630469778559" duration="48000" />
     </task>
     <servers />
   </component>
